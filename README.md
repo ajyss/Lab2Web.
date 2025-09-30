@@ -5,7 +5,9 @@ Oke, saya bantu poles README Anda agar lebih menarik, rapi, dan tetap SEO-friend
 # 🌐 Praktikum 1 – HTML Dasar
 
 👤 **Nama**: Muhammad Aziz Tri Ramadhan
+
 🆔 **NIM**: 312410380
+
 🏫 **Kelas**: TI.24.A3
 
 ---
@@ -32,7 +34,7 @@ h1 {
 }
 ```
 
-📸 Tampilan awal: <img src="img4.png" width="700">
+📸 Tampilan awal: <img src="img4.png" 
 
 Kemudian saya lakukan eksperimen dengan menambahkan properti baru:
 
