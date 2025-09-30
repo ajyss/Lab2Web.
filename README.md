@@ -1,46 +1,172 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
-           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
-           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
+Oke, saya bantu poles README Anda agar lebih menarik, rapi, dan tetap SEO-friendly dengan tambahan elemen visual (emoji, heading lebih hidup, dan sedikit copywriting supaya tidak kaku). Berikut hasil revisinya:
 
-These are common Git commands used in various situations:
+---
 
-start a working area (see also: git help tutorial)
-   clone      Clone a repository into a new directory
-   init       Create an empty Git repository or reinitialize an existing one
+# 🌐 Praktikum 1 – HTML Dasar
 
-work on the current change (see also: git help everyday)
-   add        Add file contents to the index
-   mv         Move or rename a file, a directory, or a symlink
-   restore    Restore working tree files
-   rm         Remove files from the working tree and from the index
+👤 **Nama**: Muhammad Aziz Tri Ramadhan
+🆔 **NIM**: 312410380
+🏫 **Kelas**: TI.24.A3
 
-examine the history and state (see also: git help revisions)
-   bisect     Use binary search to find the commit that introduced a bug
-   diff       Show changes between commits, commit and working tree, etc
-   grep       Print lines matching a pattern
-   log        Show commit logs
-   show       Show various types of objects
-   status     Show the working tree status
+---
 
-grow, mark and tweak your common history
-   backfill   Download missing objects in a partial clone
-   branch     List, create, or delete branches
-   commit     Record changes to the repository
-   merge      Join two or more development histories together
-   rebase     Reapply commits on top of another base tip
-   reset      Reset current HEAD to the specified state
-   switch     Switch branches
-   tag        Create, list, delete or verify a tag object signed with GPG
+## 📂 File yang Digunakan
 
-collaborate (see also: git help workflows)
-   fetch      Download objects and refs from another repository
-   pull       Fetch from and integrate with another repository or a local branch
-   push       Update remote refs along with associated objects
+* 📄 **lab.html** → berisi struktur HTML utama serta deklarasi **internal CSS**.
+* 🎨 **style_eksternal.css** → file CSS eksternal yang dipanggil dari `lab.html`.
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+---
+
+## 🚀 Jawaban Tugas
+
+### 🔹 1. Eksperimen Mengubah Properti CSS
+
+Pada file `lab.html` terdapat deklarasi awal untuk elemen `<h1>`:
+
+```css
+h1 {
+  font-size: 24px;
+  color: #0F189F;
+  text-align: center;
+  padding: 20px 10px;
+}
+```
+
+📸 Tampilan awal: <img src="img4.png" width="700">
+
+Kemudian saya lakukan eksperimen dengan menambahkan properti baru:
+
+```css
+h1 {
+  font-size: 28px;
+  color: darkblue;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+```
+
+📸 Hasil setelah perubahan: <img src="img6.png" width="700">
+
+✨ **Perubahan yang terlihat:**
+
+* Ukuran teks lebih besar.
+* Warna menjadi biru tua.
+* Ada latar belakang abu-abu dengan sudut melengkung.
+
+---
+
+### 🔹 2. Perbedaan `h1 {…}` dengan `#intro h1 {…}`
+
+* `h1 {…}` → berlaku untuk **semua elemen `<h1>`**.
+* `#intro h1 {…}` → hanya berlaku pada `<h1>` di dalam elemen dengan **id="intro"**.
+
+📌 Contoh dari `lab.html`:
+
+```html
+<header>
+  <h1>CSS Internal dan <i>Inline CSS</i></h1>
+</header>
+
+<div id="intro">
+  <h1>Hello World</h1>
+</div>
+```
+
+Jika ditambahkan CSS berikut:
+
+```css
+h1 {
+  color: red;
+}
+
+#intro h1 {
+  color: green;
+}
+```
+
+📸 Hasil: <img src="image copy 5.png" width="700">
+
+👉 **Kesimpulan:**
+
+* Judul di `<header>` → **merah**.
+* Judul di dalam `#intro` → **hijau**.
+
+---
+
+### 🔹 3. Prioritas CSS (Eksternal, Internal, Inline)
+
+Urutan prioritas CSS:
+
+1. **Inline CSS** (paling kuat 💪).
+2. **Internal CSS** (didefinisikan dalam `<style>`).
+3. **Eksternal CSS** (paling lemah jika konflik).
+
+📌 Contoh:
+
+```html
+<p style="color: blue;">Teks ini Inline CSS</p>
+```
+
+```css
+/* Internal */
+p { color: green; }
+
+/* Eksternal */
+p { color: red; }
+```
+
+👉 Hasil: Teks tetap **biru**, karena inline CSS lebih dominan.
+
+---
+
+### 🔹 4. Prioritas ID vs Class
+
+Jika elemen memiliki **ID** dan **Class**, maka **ID lebih kuat**.
+
+📌 Contoh dari `lab.html`:
+
+```html
+<p id="paragraf-1" class="text-paragraf">
+  Ini contoh teks dengan ID dan Class
+</p>
+```
+
+```css
+.text-paragraf {
+  color: blue;
+}
+
+#paragraf-1 {
+  color: red;
+}
+```
+
+👉 Hasil: Teks berwarna **merah**, karena ID selector lebih spesifik dibanding Class.
+
+---
+
+## 📝 Kesimpulan
+
+📌 Dari praktikum ini dapat disimpulkan bahwa:
+
+1. CSS bisa diperkaya dengan berbagai properti untuk memperindah tampilan web.
+2. Selector umum (`h1`) berbeda dengan selector spesifik (`#intro h1`).
+3. Urutan prioritas CSS adalah: **Inline > Internal > Eksternal**.
+4. ID memiliki tingkat prioritas lebih tinggi dibandingkan Class.
+
+---
+
+## Langkah Langkah Praktikum
+
+### 1. tampilan Browser
+
+📸 Hasil:
+
+<img src="image.png" width="700">
+
+### 2. Membuat dokumen HTML
+📸 Hasil:
+
+<img src="image copy 2.png" width="700">
