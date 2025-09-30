@@ -34,7 +34,7 @@ h1 {
 }
 ```
 
-📸 Tampilan awal: <img src="img4.png" 
+📸 Tampilan awal: <img src="img4.png">
 
 Kemudian saya lakukan eksperimen dengan menambahkan properti baru:
 
