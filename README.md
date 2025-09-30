@@ -1,4 +1,4 @@
-Oke, saya bantu poles README Anda agar lebih menarik, rapi, dan tetap SEO-friendly dengan tambahan elemen visual (emoji, heading lebih hidup, dan sedikit copywriting supaya tidak kaku). Berikut hasil revisinya:
+Oke, saya akan poles ulang README Anda biar lebih menarik, rapi, dan tetap enak dibaca. Saya tambahkan struktur yang lebih clean, elemen visual (emoji, bullet list, heading konsisten), serta gaya penulisan yang lebih human-friendly tapi tetap formal untuk tugas kuliah. Berikut hasil revisinya 👇
 
 ---
 
@@ -23,7 +23,7 @@ Oke, saya bantu poles README Anda agar lebih menarik, rapi, dan tetap SEO-friend
 
 ### 🔹 1. Eksperimen Mengubah Properti CSS
 
-Pada file `lab.html` terdapat deklarasi awal untuk elemen `<h1>`:
+Deklarasi awal pada elemen `<h1>` di `lab.html`:
 
 ```css
 h1 {
@@ -34,9 +34,9 @@ h1 {
 }
 ```
 
-📸 Tampilan awal: <img src="img4.png">
+📸 **Tampilan awal**: <img src="img4.png">
 
-Kemudian saya lakukan eksperimen dengan menambahkan properti baru:
+Kemudian saya ubah dengan menambahkan properti baru:
 
 ```css
 h1 {
@@ -49,12 +49,12 @@ h1 {
 }
 ```
 
-📸 Hasil setelah perubahan: <img src="img6.png" width="700">
+📸 **Hasil perubahan**: <img src="img6.png">
 
-✨ **Perubahan yang terlihat:**
+✨ **Perubahan yang terlihat**:
 
 * Ukuran teks lebih besar.
-* Warna menjadi biru tua.
+* Warna berubah menjadi biru tua.
 * Ada latar belakang abu-abu dengan sudut melengkung.
 
 ---
@@ -64,7 +64,7 @@ h1 {
 * `h1 {…}` → berlaku untuk **semua elemen `<h1>`**.
 * `#intro h1 {…}` → hanya berlaku pada `<h1>` di dalam elemen dengan **id="intro"**.
 
-📌 Contoh dari `lab.html`:
+📌 **Contoh kode**:
 
 ```html
 <header>
@@ -76,21 +76,18 @@ h1 {
 </div>
 ```
 
-Jika ditambahkan CSS berikut:
-
 ```css
 h1 {
   color: red;
 }
-
 #intro h1 {
   color: green;
 }
 ```
 
-📸 Hasil: <img src="image copy 5.png" width="700">
+📸 **Hasil**: <img src="image copy 5.png">
 
-👉 **Kesimpulan:**
+👉 **Kesimpulan**:
 
 * Judul di `<header>` → **merah**.
 * Judul di dalam `#intro` → **hijau**.
@@ -102,10 +99,10 @@ h1 {
 Urutan prioritas CSS:
 
 1. **Inline CSS** (paling kuat 💪).
-2. **Internal CSS** (didefinisikan dalam `<style>`).
+2. **Internal CSS** (dalam tag `<style>`).
 3. **Eksternal CSS** (paling lemah jika konflik).
 
-📌 Contoh:
+📌 **Contoh**:
 
 ```html
 <p style="color: blue;">Teks ini Inline CSS</p>
@@ -113,13 +110,17 @@ Urutan prioritas CSS:
 
 ```css
 /* Internal */
-p { color: green; }
+p {
+  color: green;
+}
 
 /* Eksternal */
-p { color: red; }
+p {
+  color: red;
+}
 ```
 
-👉 Hasil: Teks tetap **biru**, karena inline CSS lebih dominan.
+👉 **Hasil**: Teks tetap **biru**, karena inline CSS memiliki prioritas tertinggi.
 
 ---
 
@@ -127,7 +128,7 @@ p { color: red; }
 
 Jika elemen memiliki **ID** dan **Class**, maka **ID lebih kuat**.
 
-📌 Contoh dari `lab.html`:
+📌 **Contoh**:
 
 ```html
 <p id="paragraf-1" class="text-paragraf">
@@ -139,13 +140,12 @@ Jika elemen memiliki **ID** dan **Class**, maka **ID lebih kuat**.
 .text-paragraf {
   color: blue;
 }
-
 #paragraf-1 {
   color: red;
 }
 ```
 
-👉 Hasil: Teks berwarna **merah**, karena ID selector lebih spesifik dibanding Class.
+👉 **Hasil**: Teks berwarna **merah**, karena selector **ID** lebih spesifik daripada **Class**.
 
 ---
 
@@ -153,22 +153,29 @@ Jika elemen memiliki **ID** dan **Class**, maka **ID lebih kuat**.
 
 📌 Dari praktikum ini dapat disimpulkan bahwa:
 
-1. CSS bisa diperkaya dengan berbagai properti untuk memperindah tampilan web.
+1. CSS dapat memperindah tampilan web dengan berbagai properti.
 2. Selector umum (`h1`) berbeda dengan selector spesifik (`#intro h1`).
 3. Urutan prioritas CSS adalah: **Inline > Internal > Eksternal**.
-4. ID memiliki tingkat prioritas lebih tinggi dibandingkan Class.
+4. **ID** memiliki tingkat prioritas lebih tinggi dibandingkan **Class**.
 
 ---
 
-## Langkah Langkah Praktikum
+## 🛠️ Langkah-Langkah Praktikum
 
-### 1. tampilan Browser
+### 1️⃣ Tampilan Browser
 
-📸 Hasil:
+📸<img src="image.png">
 
-<img src="image.png" width="700">
+### 2️⃣ Membuat Dokumen HTML
 
-### 2. Membuat dokumen HTML
-📸 Hasil:
+📸<img src="image copy.png">
 
-<img src="image copy 2.png" width="700">
+### 3️⃣ Mendeklarasikan CSS Internal
+
+📸<img src="color font.png">
+📸<img src="image copy 2.png">
+
+### 4️⃣ Eksperimen & Modifikasi
+
+📸<img src="img6.png">
+
