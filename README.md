@@ -1,8 +1,6 @@
-Oke, saya akan poles ulang README Anda biar lebih menarik, rapi, dan tetap enak dibaca. Saya tambahkan struktur yang lebih clean, elemen visual (emoji, bullet list, heading konsisten), serta gaya penulisan yang lebih human-friendly tapi tetap formal untuk tugas kuliah. Berikut hasil revisinya 👇
 
----
 
-# 🌐 Praktikum 1 – HTML Dasar
+# 🌐 Praktikum 2: CSS Dasar
 
 👤 **Nama**: Muhammad Aziz Tri Ramadhan
 
